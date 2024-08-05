@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-public class Employee {
+public class Student {
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -15,8 +15,5 @@ public class Employee {
 	
 	@Column(name = "first_name")
 	private String firstName;
-	
-	@Column(name = "last_name")
-	private String lastName;
-	
+
 }
